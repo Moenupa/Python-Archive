@@ -37,6 +37,14 @@ class Simulation():
         '''
         return list(map(int, string.split(' ')))
     
+    def printResult(l: list) -> None:
+        '''
+        Input:
+        @l: list of cases
+        '''
+        for case in l:
+            print(case)
+    
 if __name__ == '__main__':
     randn = Simulation.parseRandN('09 06 51 62 83 61 59 20 82 68')
     print(Simulation.findInterval([0, 25], 25))
